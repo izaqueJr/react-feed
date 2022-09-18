@@ -1,0 +1,21 @@
+header.top {
+    background: var(--gray-800);
+    display: flex;
+    padding: 1.25rem 2rem;
+}
+
+.header-container{
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.header-content img{
+    height: 2rem;
+}
+
+.header-content p{
+    font-weight: 700;
+    font-size: 	1.625rem;
+    color: var(--gray-100);
+}

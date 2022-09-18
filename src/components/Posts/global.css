@@ -1,0 +1,95 @@
+.post + .post{
+    margin-top: 1.5rem;
+}
+
+.post{
+    border-radius: 5px;
+    background-color: var(--gray-800);
+    padding: 2.5rem;
+}
+
+.post header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-profiler{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.post-profiler .user-profile--text strong,
+.post-profiler .user-profile--text span{
+    text-align: left;
+}
+
+.post time{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--gray-400);
+}
+
+/* text */
+.post-container{
+    margin: 1.5rem 0;
+}
+
+.post-container p{
+    color: var(--gray-100);
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.post-container a{
+    text-decoration: none;
+    color: var(--green-500);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+/* form */
+
+.feedback-comment{
+    border-top: 1px solid var(--gray-600); 
+    padding-top: 1.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-comment strong{
+    color: var(--gray-100);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.feedback-comment textarea{
+    background: transparent ;
+    border: 1px solid var(--green-500);
+    height: 6rem;
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--gray-100);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    resize: none;
+}
+
+.feedback-comment button{
+    width: 6.75rem;
+    background: var(--green-500);
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    color: var(--gray-100);
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-weight: 700;
+    cursor: pointer;
+}

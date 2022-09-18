@@ -1,0 +1,26 @@
+.user-profile--image{
+    border: 0.125rem solid var(--green-500);
+    border-radius: 0.5rem;
+    padding: 0.125rem;
+    background: var(--gray-800);
+}
+
+.user-profile--text strong{
+    color: var(--gray-100);
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.user-profile--text span{
+    color: var(--gray-400);
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.user-profile--text{
+    display: flex;
+    flex-direction: column;
+}
