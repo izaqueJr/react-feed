@@ -36,7 +36,7 @@
 
 /* text */
 .post-container{
-    margin: 1.5rem 0;
+    margin-top: 1.5rem;
 }
 
 .post-container p{
@@ -58,19 +58,20 @@
 .feedback-comment{
     border-top: 1px solid var(--gray-600); 
     padding-top: 1.5rem;
+    margin-top: 1.5rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.feedback-comment strong{
+.feedback-comment > strong{
     color: var(--gray-100);
     font-weight: 700;
     font-size: 1rem;
 }
 
 .feedback-comment textarea{
-    background: transparent ;
+    background: var(--gray-900) ;
     border: 1px solid var(--green-500);
     height: 6rem;
     border-radius: 5px;
@@ -81,7 +82,17 @@
     resize: none;
 }
 
-.feedback-comment button{
+.feedback-comment footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.feedback-comment:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.feedback-comment button[type="submit"]{
     width: 6.75rem;
     background: var(--green-500);
     border: 0;
@@ -92,4 +103,9 @@
     line-height: 1.1875rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+.feedback-comment button[type="submit"]:hover{
+    color: var(--white) ;
+    background: var(--green-300);
 }

@@ -29,7 +29,7 @@ export function Posts(props: iPostProps) {
         <br/><br/>
         <a href="#"> #novoprojeto #nlw #rocketseat </a>
       </div>
-      
+
       <form className="feedback-comment">
           <strong>
             Deixe seu feedback
@@ -37,9 +37,11 @@ export function Posts(props: iPostProps) {
 
           <textarea placeholder="Deixe seu comentário" />
 
-          <button type="submit">
-            Publicar
-          </button>
+          <footer>
+            <button type="submit">
+              Publicar
+            </button>
+          </footer>
       </form>
 
     </article>
